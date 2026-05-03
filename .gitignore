@@ -117,3 +117,6 @@ Thumbs.db
 bin/
 obj/
 
+backend/Data/JSON/Settings.json
+
+Settings.json
