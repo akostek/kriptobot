@@ -63,7 +63,17 @@ router.post('/:id/approve', async (req, res) => {
     }
 
     // Execute the trade
-    const order = await createMarketOrder(item.symbol, item.action.toLowerCase() as 'buy' | 'sell', tradeAmount);
+    let order;
+    try {
+      order = await createMarketOrder(item.symbol, item.action.toLowerCase() as 'buy' | 'sell', tradeAmount);
+    } catch (tradeError: any) {
+      // If Binance rejects the trade (e.g. NOTIONAL, INSUFFICIENT_FUNDS), reject the approval item so it doesn't get stuck
+      await prisma.approvalQueue.update({
+        where: { id },
+        data: { status: 'REJECTED', processedAt: new Date() }
+      });
+      throw tradeError; // pass to the outer catch block to format the message
+    }
 
     // Update queue status
     await prisma.approvalQueue.update({
@@ -78,7 +88,7 @@ router.post('/:id/approve', async (req, res) => {
           symbol: item.symbol,
           side: item.action,
           price: item.price,
-          amount: item.amount,
+          amount: tradeAmount, // Use the actual executed amount
           reason: item.reasoning,
           status: 'OPEN'
         }
@@ -90,7 +100,7 @@ router.post('/:id/approve', async (req, res) => {
       });
       
       if (openTrade) {
-        const pnl = (item.price - openTrade.price) * item.amount;
+        const pnl = (item.price - openTrade.price) * openTrade.amount;
         await prisma.trade.update({
           where: { id: openTrade.id },
           data: {
@@ -115,7 +125,17 @@ router.post('/:id/approve', async (req, res) => {
 
     res.json({ success: true, message: 'İşlem başarıyla onaylandı ve borsaya iletildi.' });
   } catch (error: any) {
-    res.status(500).json({ error: `Onaylama hatası: ${error.message}` });
+    let errorMessage = error.message || String(error);
+    if (errorMessage.includes('NOTIONAL')) {
+      errorMessage = 'Minimum işlem tutarı (5 USDT) karşılanmıyor. Bu işlem Binance tarafından reddedildi.';
+    } else if (errorMessage.includes('LOT_SIZE') || errorMessage.includes('PRICE_FILTER')) {
+      errorMessage = 'Miktar küsuratı hatası.';
+    } else if (errorMessage.includes('INSUFFICIENT_FUNDS') || errorMessage.includes('-2010')) {
+      errorMessage = 'Yetersiz bakiye.';
+    } else if (errorMessage.includes('Market is closed')) {
+      errorMessage = 'Bu parite Binance Testnet (Demo) üzerinde işleme kapalı. Testnet sadece belirli ana pariteleri destekler.';
+    }
+    res.status(500).json({ error: `Onaylama hatası: ${errorMessage}` });
   }
 });
 

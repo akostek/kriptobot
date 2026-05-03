@@ -40,6 +40,7 @@ model Setting {
   symbol           String   @default("BTC/USDT") // Kept for default fallback, though we use CoinSettings now
   tradeAmount      Float    @default(100.0)
   isManualApproval Boolean  @default(true)
+  isTestnet        Boolean  @default(false)
   maxTradesPerDay  Int      @default(5)
   scanInterval     Int      @default(5) // Minutes
   updatedAt        DateTime @updatedAt

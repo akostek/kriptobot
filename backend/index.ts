@@ -75,7 +75,8 @@ app.get('/api/settings', async (req, res) => {
           binanceSecret: process.env.BINANCE_API_SECRET || "",
           openaiKey: process.env.OPENAI_API_KEY || "",
           symbol: "BTC/USDT",
-          tradeAmount: 100
+          tradeAmount: 100,
+          isTestnet: false
         }
       });
     }
@@ -86,7 +87,7 @@ app.get('/api/settings', async (req, res) => {
 });
 
 app.post('/api/settings', async (req, res) => {
-  const { binanceKey, binanceSecret, openaiKey, aiModel, symbol, tradeAmount, isManualApproval, maxTradesPerDay, scanInterval } = req.body;
+  const { binanceKey, binanceSecret, openaiKey, aiModel, symbol, tradeAmount, isManualApproval, isTestnet, maxTradesPerDay, scanInterval } = req.body;
   try {
     const setting = await prisma.setting.upsert({
       where: { id: "1" },
@@ -98,6 +99,7 @@ app.post('/api/settings', async (req, res) => {
         symbol,
         tradeAmount: Number(tradeAmount),
         isManualApproval,
+        isTestnet: Boolean(isTestnet),
         maxTradesPerDay: Number(maxTradesPerDay),
         scanInterval: Number(scanInterval)
       },
@@ -110,6 +112,7 @@ app.post('/api/settings', async (req, res) => {
         symbol,
         tradeAmount: Number(tradeAmount),
         isManualApproval,
+        isTestnet: Boolean(isTestnet),
         maxTradesPerDay: Number(maxTradesPerDay),
         scanInterval: Number(scanInterval)
       }

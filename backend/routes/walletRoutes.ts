@@ -1,6 +1,6 @@
 import express from 'express';
 import { PrismaClient } from '@prisma/client';
-import { getWalletBalances, getCurrentPrice, createMarketOrder, createLimitOrder } from '../services/ccxtService.js';
+import { getWalletBalances, getCurrentPrice, getAllPrices, createMarketOrder, createLimitOrder } from '../services/ccxtService.js';
 
 const router = express.Router();
 const prisma = new PrismaClient();
@@ -8,7 +8,10 @@ const prisma = new PrismaClient();
 // Get Wallet Balances with estimated USDT value
 router.get('/', async (req, res) => {
   try {
-    const balances = await getWalletBalances();
+    const [balances, allPrices] = await Promise.all([
+      getWalletBalances(),
+      getAllPrices()
+    ]);
     
     // Calculate estimated USDT value and PnL for each coin
     const enrichedBalances = await Promise.all(
@@ -17,7 +20,8 @@ router.get('/', async (req, res) => {
           return { ...b, price: 1, valueUsdt: b.amount, pnlPercent: 0, pnlUsdt: 0, avgBuyPrice: 1 };
         }
         
-        const price = await getCurrentPrice(`${b.coin}/USDT`);
+        const symbol = `${b.coin}/USDT`;
+        const price = allPrices[symbol] || 0;
         
         // Find if we have an open trade for this to calculate PnL
         const openTrades = await prisma.trade.findMany({
@@ -124,7 +128,19 @@ router.post('/trade', async (req, res) => {
 
     res.json({ success: true, message: 'İşlem başarıyla borsaya iletildi.', orderId: order.id });
   } catch (error: any) {
-    res.status(500).json({ error: `İşlem hatası: ${error.message}` });
+    let errorMessage = error.message || String(error);
+    
+    if (errorMessage.includes('NOTIONAL')) {
+      errorMessage = 'Binance minimum işlem tutarı (genellikle 5 USDT) karşılanmıyor. Bakiyeniz çok düşükse Binance üzerinden "Küçük Bakiyeleri BNB\'ye Çevir" özelliğini kullanmanız gerekebilir.';
+    } else if (errorMessage.includes('LOT_SIZE') || errorMessage.includes('PRICE_FILTER')) {
+      errorMessage = 'Miktar veya fiyat küsuratı hatası. Lütfen borsanın izin verdiği ondalık hassasiyete uygun bir değer girin.';
+    } else if (errorMessage.includes('INSUFFICIENT_FUNDS') || errorMessage.includes('insufficient balance') || errorMessage.includes('-2010')) {
+      errorMessage = 'Yetersiz bakiye. Lütfen bakiyenizi kontrol edin.';
+    } else if (errorMessage.includes('Market is closed')) {
+      errorMessage = 'Bu parite Binance Testnet (Demo) üzerinde işleme kapalı. Testnet sadece belirli ana pariteleri destekler.';
+    }
+
+    res.status(500).json({ error: `İşlem hatası: ${errorMessage}` });
   }
 });
 

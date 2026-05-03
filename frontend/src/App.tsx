@@ -35,6 +35,7 @@ function App() {
     symbol: 'BTC/USDT',
     tradeAmount: 100,
     isManualApproval: true,
+    isTestnet: false,
     maxTradesPerDay: 5,
     scanInterval: 5
   });
@@ -707,7 +708,23 @@ function App() {
                   </label>
                 </div>
 
-                <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700 flex items-center justify-between">
+                <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700 flex items-center justify-between mt-4">
+                  <div>
+                    <h4 className="font-medium text-slate-200">Sanal Bakiye (Testnet) Modu</h4>
+                    <p className="text-xs text-slate-400 mt-1">Açıksa sahte para ile test yapılır (Sadece BTC vb. ana coinleri destekler). Kapalıysa gerçek para ile işlem yapar.</p>
+                  </div>
+                  <label className="relative inline-flex items-center cursor-pointer">
+                    <input 
+                      type="checkbox" 
+                      className="sr-only peer" 
+                      checked={settings.isTestnet}
+                      onChange={e => setSettings({...settings, isTestnet: e.target.checked})}
+                    />
+                    <div className="w-11 h-6 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-500"></div>
+                  </label>
+                </div>
+
+                <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700 flex items-center justify-between mt-4">
                   <div>
                     <h4 className="font-medium text-slate-200">Yapay Zeka Modeli</h4>
                     <p className="text-xs text-slate-400 mt-1">Daha ucuz veya daha zeki modelleri seçebilirsiniz.</p>
@@ -723,7 +740,7 @@ function App() {
                   </select>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-4 mt-4">
                   <div>
                     <label className="block text-sm font-medium text-slate-400 mb-1">Günlük İşlem Limiti</label>
                     <input 
@@ -742,7 +759,7 @@ function App() {
                       className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 focus:outline-none focus:border-indigo-500 text-slate-200"
                     />
                   </div>
-                  <div>
+                  <div className="col-span-2">
                     <label className="block text-sm font-medium text-slate-400 mb-1">İşlem Bütçesi ($)</label>
                     <input 
                       type="number" 
@@ -768,7 +785,10 @@ function App() {
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium text-slate-400 mb-1">Binance Testnet API Key</label>
+                  <label className="block text-sm font-medium text-slate-400 mb-1 flex justify-between">
+                    <span>Binance API Key</span>
+                    <span className={settings.isTestnet ? "text-indigo-400" : "text-emerald-400"}>({settings.isTestnet ? 'Testnet' : 'Gerçek Borsa'})</span>
+                  </label>
                   <input 
                     type="text" 
                     value={settings.binanceKey} 
@@ -778,7 +798,10 @@ function App() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-slate-400 mb-1">Binance Testnet Secret Key</label>
+                  <label className="block text-sm font-medium text-slate-400 mb-1 flex justify-between">
+                    <span>Binance Secret Key</span>
+                    <span className={settings.isTestnet ? "text-indigo-400" : "text-emerald-400"}>({settings.isTestnet ? 'Testnet' : 'Gerçek Borsa'})</span>
+                  </label>
                   <input 
                     type="password" 
                     value={settings.binanceSecret} 

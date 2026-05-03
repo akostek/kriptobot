@@ -15,10 +15,12 @@ const getExchange = async () => {
     },
   });
   
-  // Binance Sandbox mode is deprecated for some endpoints.
-  // Use the new Unified Demo Trading mode instead.
-  exchange.options['enableDemoTrading'] = true;
-  exchange.enableDemoTrading(true);
+  if (setting?.isTestnet) {
+    // Binance Sandbox mode is deprecated for some endpoints.
+    // Use the new Unified Demo Trading mode instead.
+    exchange.options['enableDemoTrading'] = true;
+    exchange.enableDemoTrading(true);
+  }
   
   return exchange;
 };
@@ -71,6 +73,21 @@ export const getCurrentPrice = async (symbol: string) => {
   } catch (error) {
     console.error('Error fetching ticker:', error);
     return 0;
+  }
+};
+
+export const getAllPrices = async () => {
+  try {
+    const exchange = await getExchange();
+    const tickers = await exchange.fetchTickers();
+    const prices: Record<string, number> = {};
+    for (const [symbol, ticker] of Object.entries(tickers)) {
+      prices[symbol] = ticker.last || 0;
+    }
+    return prices;
+  } catch (error) {
+    console.error('Error fetching all tickers:', error);
+    return {};
   }
 };
 
