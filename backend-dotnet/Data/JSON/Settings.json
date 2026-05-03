@@ -1,0 +1,30 @@
+{
+  "d7ec5d1c-c1cb-42a9-8500-f60445b4485b": {
+    "UserId": "d7ec5d1c-c1cb-42a9-8500-f60445b4485b",
+    "BinanceKey": null,
+    "BinanceSecret": null,
+    "OpenaiKey": null,
+    "AiModel": "gpt-4o-mini",
+    "Symbol": "BTC/USDT",
+    "TradeAmount": 100,
+    "IsManualApproval": true,
+    "IsTestnet": false,
+    "MaxTradesPerDay": 5,
+    "ScanInterval": 5,
+    "UpdatedAt": "2026-05-03T19:27:09.412984Z"
+  },
+  "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc": {
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "BinanceKey": null,
+    "BinanceSecret": null,
+    "OpenaiKey": null,
+    "AiModel": "gpt-4o-mini",
+    "Symbol": "BTC/USDT",
+    "TradeAmount": 100,
+    "IsManualApproval": true,
+    "IsTestnet": false,
+    "MaxTradesPerDay": 5,
+    "ScanInterval": 5,
+    "UpdatedAt": "2026-05-03T19:34:12.424797Z"
+  }
+}

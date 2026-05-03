@@ -1,0 +1,20 @@
+{
+  "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc_BTC/USDT": {
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BTC/USDT",
+    "IsActive": true,
+    "LastScanned": null
+  },
+  "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc_BNB/USDT": {
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BNB/USDT",
+    "IsActive": true,
+    "LastScanned": null
+  },
+  "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc_ETH/USDT": {
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "IsActive": true,
+    "LastScanned": null
+  }
+}

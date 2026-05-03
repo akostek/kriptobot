@@ -1,0 +1,14 @@
+{
+  "d7ec5d1c-c1cb-42a9-8500-f60445b4485b": {
+    "Id": "d7ec5d1c-c1cb-42a9-8500-f60445b4485b",
+    "Username": "admin",
+    "PasswordHash": "admin",
+    "CreatedAt": "2026-05-03T19:27:09.4126918Z"
+  },
+  "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc": {
+    "Id": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Username": "ahmetkostek",
+    "PasswordHash": "563563",
+    "CreatedAt": "2026-05-03T19:34:12.4247929Z"
+  }
+}

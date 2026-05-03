@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xr8juJHk30M=",
+  "success": true,
+  "projectFilePath": "D:\\Kripto_Bot\\backend-dotnet\\KriptoBot.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\binance.net\\12.12.0\\binance.net.12.12.0.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\cryptoexchange.net\\11.1.1\\cryptoexchange.net.11.1.1.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\libsodium\\1.0.20.1\\libsodium.1.0.20.1.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\10.0.7\\microsoft.aspnetcore.authentication.jwtbearer.10.0.7.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.7\\microsoft.aspnetcore.openapi.10.0.7.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.18.0\\microsoft.identitymodel.abstractions.8.18.0.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.18.0\\microsoft.identitymodel.jsonwebtokens.8.18.0.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\microsoft.identitymodel.logging\\8.18.0\\microsoft.identitymodel.logging.8.18.0.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\microsoft.identitymodel.protocols\\8.0.1\\microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\8.0.1\\microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.18.0\\microsoft.identitymodel.tokens.8.18.0.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\nsec.cryptography\\25.4.0\\nsec.cryptography.25.4.0.nupkg.sha512",
+    "C:\\Users\\vcaliskan\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.18.0\\system.identitymodel.tokens.jwt.8.18.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -4,9 +4,14 @@ import { Activity, Brain, CandlestickChart, DollarSign, Wallet, Settings, X, Sav
 import { format } from 'date-fns';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-const API_URL = 'http://localhost:5001/api';
+import { LogOut } from 'lucide-react';
 
-function App() {
+interface AppProps {
+  username: string | null;
+  onLogout: () => void;
+}
+
+export default function App({ username, onLogout }: AppProps) {
   const [activeTab, setActiveTab] = useState('dashboard');
   
   const [stats, setStats] = useState({ balance: 0, openTrades: 0, totalTrades: 0, totalPnl: 0, history: [] });
@@ -32,6 +37,7 @@ function App() {
     binanceKey: '',
     binanceSecret: '',
     openaiKey: '',
+    aiModel: 'gpt-4o-mini',
     symbol: 'BTC/USDT',
     tradeAmount: 100,
     isManualApproval: true,
@@ -43,13 +49,13 @@ function App() {
   const fetchData = async () => {
     try {
       const [statsRes, logsRes, tradesRes, approvalsRes, coinsRes, walletRes, settingsRes] = await Promise.all([
-        axios.get(`${API_URL}/stats`),
-        axios.get(`${API_URL}/logs`),
-        axios.get(`${API_URL}/trades`),
-        axios.get(`${API_URL}/approvals`),
-        axios.get(`${API_URL}/coins`),
-        axios.get(`${API_URL}/wallet`),
-        axios.get(`${API_URL}/settings`)
+        axios.get(`/api/stats`),
+        axios.get(`/api/logs`),
+        axios.get(`/api/trades`),
+        axios.get(`/api/approvals`),
+        axios.get(`/api/coins`),
+        axios.get(`/api/wallet`),
+        axios.get(`/api/settings`)
       ]);
       setStats(statsRes.data);
       setLogs(logsRes.data);
@@ -74,8 +80,8 @@ function App() {
 
   const handleSaveSettings = async () => {
     try {
-      await axios.post(`${API_URL}/settings`, settings);
-      await axios.post(`${API_URL}/restart-cron`); // Restart backend cron
+      await axios.post(`/api/settings`, settings);
+      await axios.post(`/api/restart-cron`); // Restart backend cron
       setIsSettingsOpen(false);
       alert('Ayarlar başarıyla kaydedildi! Bot yeni ayarlarla devam edecek.');
     } catch (error) {
@@ -85,7 +91,7 @@ function App() {
 
   const handleApprove = async (id: number) => {
     try {
-      await axios.post(`${API_URL}/approvals/${id}/approve`);
+      await axios.post(`/api/approvals/${id}/approve`);
       fetchData();
     } catch (error: any) {
       alert(error.response?.data?.error || "Hata oluştu.");
@@ -94,7 +100,7 @@ function App() {
 
   const handleReject = async (id: number) => {
     try {
-      await axios.post(`${API_URL}/approvals/${id}/reject`);
+      await axios.post(`/api/approvals/${id}/reject`);
       fetchData();
     } catch (error) {
       alert("Hata oluştu.");
@@ -103,7 +109,7 @@ function App() {
 
   const handleToggleCoin = async (symbol: string) => {
     try {
-      await axios.post(`${API_URL}/coins/${symbol.replace('/', '-')}/toggle`);
+      await axios.post(`/api/coins/${symbol.replace('/', '-')}/toggle`);
       fetchData();
     } catch (error) {
       alert("Hata oluştu.");
@@ -112,7 +118,7 @@ function App() {
 
   const handleSyncCoins = async () => {
     try {
-      await axios.post(`${API_URL}/coins/sync`);
+      await axios.post(`/api/coins/sync`);
       alert("Borsadan coinler başarıyla çekildi!");
       fetchData();
     } catch (error) {
@@ -126,7 +132,7 @@ function App() {
       return;
     }
     try {
-      await axios.post(`${API_URL}/force-run`);
+      await axios.post(`/api/force-run`);
       alert("Tetiklendi! Bekleyin...");
       setTimeout(fetchData, 3000);
     } catch (error) {
@@ -136,7 +142,7 @@ function App() {
 
   const submitManualTrade = async () => {
     try {
-      await axios.post(`${API_URL}/wallet/trade`, {
+      await axios.post(`/api/wallet/trade`, {
         symbol: manualTradeModal.symbol,
         side: manualTradeModal.type,
         type: tradeForm.orderType,
@@ -191,6 +197,19 @@ function App() {
             >
               <Settings className="w-5 h-5 text-slate-300" />
             </button>
+            <div className="flex items-center gap-3 pl-4 border-l border-slate-700">
+              <div className="hidden md:block text-right">
+                <div className="text-sm font-medium text-white">{username}</div>
+                <div className="text-xs text-slate-400">Pro Kullanıcı</div>
+              </div>
+              <button 
+                onClick={onLogout} 
+                className="p-2 bg-slate-800 hover:bg-red-500/10 text-slate-400 hover:text-red-400 rounded-xl border border-slate-700 transition-colors" 
+                title="Çıkış Yap"
+              >
+                <LogOut className="w-5 h-5" />
+              </button>
+            </div>
           </div>
         </div>
 
@@ -865,5 +884,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
