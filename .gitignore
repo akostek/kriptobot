@@ -112,3 +112,8 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# .NET Core
+bin/
+obj/
+

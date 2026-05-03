@@ -1,0 +1,227 @@
+{
+  "a6bbb027-2d89-4f7c-acea-dbd11ae6fc9a": {
+    "Id": "a6bbb027-2d89-4f7c-acea-dbd11ae6fc9a",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatlik mumlar\u0131n genelinde y\u00FCkseli\u015F trendi g\u00F6zlemleniyor ve son kapan\u0131\u015F fiyat\u0131 2333.35 ile \u00F6nceki y\u00FCksek seviyelere yak\u0131n. Ayr\u0131ca hacimde bir art\u0131\u015F var.",
+    "Price": 2333.35,
+    "CreatedAt": "2026-05-03T20:20:27.887555Z"
+  },
+  "567b0c0d-8e15-4e64-a2fb-392b71927b1b": {
+    "Id": "567b0c0d-8e15-4e64-a2fb-392b71927b1b",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son mum kapan\u0131\u015F\u0131 \u00F6nceki kapan\u0131\u015Flar\u0131n \u00FCzerinde, hacim art\u0131\u015F g\u00F6steriyor ve fiyat y\u00FCkseli\u015F trendinde.",
+    "Price": 2334.9,
+    "CreatedAt": "2026-05-03T20:28:25.8128537Z"
+  },
+  "f5d3c97e-95c8-443e-b8d5-bfaef36c0882": {
+    "Id": "f5d3c97e-95c8-443e-b8d5-bfaef36c0882",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son mum, \u00F6nceki kapan\u0131\u015F fiyat\u0131n\u0131n \u00FCzerinde bir kapan\u0131\u015F yapt\u0131 ve hacim art\u0131\u015F\u0131 g\u00F6zlemleniyor, bu da al\u0131m i\u00E7in bir f\u0131rsat olu\u015Fturuyor.",
+    "Price": 2333.93,
+    "CreatedAt": "2026-05-03T20:12:41.6473366Z"
+  },
+  "8dfff43f-c0ee-4d52-a97c-b9bf0a28e676": {
+    "Id": "8dfff43f-c0ee-4d52-a97c-b9bf0a28e676",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BTC/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saat i\u00E7inde fiyat, g\u00FC\u00E7l\u00FC bir destek seviyesinden d\u00F6n\u00FC\u015F yapt\u0131 ve hacim art\u0131\u015Flar\u0131 g\u00F6zlemleniyor. Ayr\u0131ca, fiyat son 24 saat i\u00E7inde genel olarak yatay bir \u015Fekilde hareket etti; bu durum al\u0131m f\u0131rsatlar\u0131n\u0131n artt\u0131\u011F\u0131n\u0131 g\u00F6steriyor.",
+    "Price": 78764.53,
+    "CreatedAt": "2026-05-03T19:48:42.4189609Z"
+  },
+  "d7b3741e-24a4-4f51-85f2-5ad16bd6718e": {
+    "Id": "d7b3741e-24a4-4f51-85f2-5ad16bd6718e",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BNB/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son mum verileri, fiyat\u0131n 619.000 seviyesinin \u00FCzerinde kalma \u00E7abas\u0131 g\u00F6sterdi\u011Fini ve hacimde art\u0131\u015F oldu\u011Funu g\u00F6steriyor, bu da al\u0131m f\u0131rsat\u0131 sunuyor.",
+    "Price": 619.23,
+    "CreatedAt": "2026-05-03T20:11:38.6395247Z"
+  },
+  "ce2d3ad5-208e-4d71-902c-27960581e264": {
+    "Id": "ce2d3ad5-208e-4d71-902c-27960581e264",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son mum kapan\u0131\u015F\u0131, \u00F6nceki y\u00FCkseklerin \u00FCzerinde ger\u00E7ekle\u015Fti ve hacim art\u0131\u015F\u0131 g\u00F6zlemleniyor, bu da yukar\u0131 y\u00F6nl\u00FC bir momentum oldu\u011Funu g\u00F6steriyor.",
+    "Price": 2335.43,
+    "CreatedAt": "2026-05-03T19:55:39.1985287Z"
+  },
+  "13380a6b-ca8d-4324-ae58-5e2436142d77": {
+    "Id": "13380a6b-ca8d-4324-ae58-5e2436142d77",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son fiyatlar art\u0131\u015F g\u00F6stermekte ve y\u00FCkseli\u015F trendi izlemekte. Ayr\u0131ca, hacim art\u0131\u015F\u0131 da pozitif bir i\u015Faret.",
+    "Price": 2334.09,
+    "CreatedAt": "2026-05-03T19:38:43.7867784Z"
+  },
+  "249eac9e-59d0-48b7-a287-d81c9ee7c69f": {
+    "Id": "249eac9e-59d0-48b7-a287-d81c9ee7c69f",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BNB/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatte fiyat, belirli bir destek seviyesinden d\u00F6nd\u00FC ve hacim art\u0131\u015F\u0131 g\u00F6zlemlendi. Trend yukar\u0131 y\u00F6nl\u00FC g\u00F6r\u00FCn\u00FCyor.",
+    "Price": 619.05,
+    "CreatedAt": "2026-05-03T20:19:14.8906478Z"
+  },
+  "7dbe32f3-04e1-48e8-a9ad-4987bf0b9b1e": {
+    "Id": "7dbe32f3-04e1-48e8-a9ad-4987bf0b9b1e",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BTC/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatte y\u00FCkseli\u015F trendi g\u00F6zlemleniyor. Fiyatlar \u00F6nceki dip seviyelerinden yukar\u0131 y\u00F6nl\u00FC hareket ediyor ve hacim art\u0131\u015F\u0131 mevcut.",
+    "Price": 78798.07,
+    "CreatedAt": "2026-05-03T19:37:11.2920342Z"
+  },
+  "b9499330-a0cf-421e-9e12-f6c5b457124f": {
+    "Id": "b9499330-a0cf-421e-9e12-f6c5b457124f",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BTC/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatte fiyat dipleri yukar\u0131 do\u011Fru hareket ediyor ve hacim art\u0131\u015Flar\u0131 g\u00F6zlemleniyor, bu da al\u0131m f\u0131rsat\u0131n\u0131 destekliyor.",
+    "Price": 78757.06,
+    "CreatedAt": "2026-05-03T20:06:53.7030216Z"
+  },
+  "e86c96e3-07b4-4dcd-90ba-1f01370ee60e": {
+    "Id": "e86c96e3-07b4-4dcd-90ba-1f01370ee60e",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatte fiyat hareketleri, son kapan\u0131\u015F\u0131n \u00F6nceki y\u00FCksek seviyelerin \u00FCzerinde olmas\u0131 ve hacim art\u0131\u015Flar\u0131yla birlikte genel bir y\u00FCkseli\u015F trendi g\u00F6steriyor.",
+    "Price": 2336.47,
+    "CreatedAt": "2026-05-03T20:01:36.1633301Z"
+  },
+  "50608637-5a94-4f42-a077-74e64ed26aa6": {
+    "Id": "50608637-5a94-4f42-a077-74e64ed26aa6",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BTC/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son mum kapan\u0131\u015F\u0131, \u00F6nceki y\u00FCksek ve d\u00FC\u015F\u00FCk seviyelerin \u00FCzerinde ger\u00E7ekle\u015Fti. Ayr\u0131ca hacim art\u0131\u015F\u0131 g\u00F6zlemleniyor, bu da al\u0131m f\u0131rsat\u0131 sunuyor.",
+    "Price": 78790,
+    "CreatedAt": "2026-05-03T19:43:09.0620969Z"
+  },
+  "a6a63c5f-b9c1-4ca2-852c-8afdc881e77b": {
+    "Id": "a6a63c5f-b9c1-4ca2-852c-8afdc881e77b",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son daha y\u00FCksek kapan\u0131\u015F fiyat\u0131 ve artan hacim, al\u0131m i\u00E7in uygun bir ortam sa\u011Fl\u0131yor.",
+    "Price": 2335.32,
+    "CreatedAt": "2026-05-03T19:45:12.9773115Z"
+  },
+  "a3644411-9a2d-4fc3-a1fb-13794bbc090a": {
+    "Id": "a3644411-9a2d-4fc3-a1fb-13794bbc090a",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BTC/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son fiyat hareketleri, y\u00FCkselen bir trend g\u00F6steriyor ve fiyat belirgin bir deste\u011Fin \u00FCzerinde kalmaya devam ediyor. Bu nedenle al\u0131m f\u0131rsat\u0131 mevcut.",
+    "Price": 78786.39,
+    "CreatedAt": "2026-05-03T19:59:30.1126505Z"
+  },
+  "badc9a24-f383-4f2a-af86-7cde8310e19f": {
+    "Id": "badc9a24-f383-4f2a-af86-7cde8310e19f",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BNB/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son fiyatlar bir yukar\u0131 y\u00F6nl\u00FC trend g\u00F6steriyor ve d\u00FC\u015F\u00FCk fiyat seviyelerinden al\u0131m f\u0131rsat\u0131 sa\u011Fl\u0131yor.",
+    "Price": 619.62,
+    "CreatedAt": "2026-05-03T20:27:22.8064545Z"
+  },
+  "fe01e963-f6a5-40f4-95de-da685c6c6ad2": {
+    "Id": "fe01e963-f6a5-40f4-95de-da685c6c6ad2",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BNB/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatlik verilerde, fiyat\u0131n en d\u00FC\u015F\u00FCk seviyelerden tekrar y\u00FCkselmeye ba\u015Flamas\u0131 ve hacim art\u0131\u015Flar\u0131n\u0131n g\u00F6zlemlenmesi al\u0131m f\u0131rsat\u0131 sunuyor.",
+    "Price": 619.28,
+    "CreatedAt": "2026-05-03T20:00:33.0091554Z"
+  },
+  "d3d1fd34-0e69-483a-97a9-3e37bccb1606": {
+    "Id": "d3d1fd34-0e69-483a-97a9-3e37bccb1606",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BNB/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatlik kapan\u0131\u015F fiyatlar\u0131 genel olarak y\u00FCkseli\u015F trendinde, hacim art\u0131\u015F\u0131 da g\u00F6zlemleniyor.",
+    "Price": 619.4,
+    "CreatedAt": "2026-05-03T19:49:17.2136559Z"
+  },
+  "a2e30e37-f092-4286-9bf2-684ba68d7821": {
+    "Id": "a2e30e37-f092-4286-9bf2-684ba68d7821",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BNB/USDT",
+    "Action": "BUY",
+    "Reasoning": "K\u0131sa vadeli y\u00FCkseli\u015F trendi g\u00F6zlemleniyor, son kapan\u0131\u015F fiyat\u0131 \u00F6nceki kapan\u0131\u015F fiyat\u0131ndan daha y\u00FCksek.",
+    "Price": 619.45,
+    "CreatedAt": "2026-05-03T19:44:11.0550573Z"
+  },
+  "71eaa457-e913-4e20-9725-f3522b9c8318": {
+    "Id": "71eaa457-e913-4e20-9725-f3522b9c8318",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BNB/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatlik veriler, fiyat\u0131n y\u00FCkselme e\u011Filiminde oldu\u011Funu ve hacmin artt\u0131\u011F\u0131n\u0131 g\u00F6steriyor.",
+    "Price": 619.28,
+    "CreatedAt": "2026-05-03T19:55:09.9717947Z"
+  },
+  "2c305022-68d9-40f1-9d23-3a2b04578c64": {
+    "Id": "2c305022-68d9-40f1-9d23-3a2b04578c64",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son mum kapan\u0131\u015F fiyat\u0131 (2334.83000) \u00F6nceki kapan\u0131\u015F fiyat\u0131na g\u00F6re y\u00FCkseli\u015F g\u00F6steriyor ve hacim art\u0131\u015F\u0131 mevcut. Bu durum al\u0131m f\u0131rsat\u0131 olu\u015Fturuyor.",
+    "Price": 2334.91,
+    "CreatedAt": "2026-05-03T19:50:20.4775118Z"
+  },
+  "af2d907c-6a6b-4ccc-9dda-a48d0277744e": {
+    "Id": "af2d907c-6a6b-4ccc-9dda-a48d0277744e",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BTC/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son fiyat 78796.85 levelinde kapanm\u0131\u015F olup, trend yukar\u0131 y\u00F6nl\u00FC bir ivme g\u00F6steriyor. Hacim art\u0131\u015F\u0131 da bu durumu destekliyor.",
+    "Price": 78796.85,
+    "CreatedAt": "2026-05-03T19:54:08.3988811Z"
+  },
+  "2f2808e5-7b52-4a4b-a12b-4fe1c78bbb01": {
+    "Id": "2f2808e5-7b52-4a4b-a12b-4fe1c78bbb01",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BTC/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatlik verilerde genel bir konsolidasyon g\u00F6r\u00FCn\u00FCm\u00FC var. Fiyat, d\u00FC\u015F\u00FCk seviyelerden toparlanma \u00E7abas\u0131 g\u00F6steriyor ve son kapan\u0131\u015F y\u00FCksek \u00F6nceki kapan\u0131\u015Flar\u0131n \u00FCzerinde. Ayr\u0131ca, hacim art\u0131\u015Flar\u0131 al\u0131m f\u0131rsatlar\u0131 yarat\u0131yor.",
+    "Price": 78755.98,
+    "CreatedAt": "2026-05-03T20:13:45.1727274Z"
+  },
+  "f35fc7ea-ee63-4176-84ad-431f659af904": {
+    "Id": "f35fc7ea-ee63-4176-84ad-431f659af904",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BTC/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son fiyat, \u00F6nceki d\u00FC\u015F\u00FCk fiyatlar\u0131n \u00FCst\u00FCnde i\u015Flem g\u00F6r\u00FCyor ve son birka\u00E7 saatlik hacim art\u0131\u015F\u0131 bir al\u0131m f\u0131rsat\u0131 sunuyor.",
+    "Price": 78887.17,
+    "CreatedAt": "2026-05-03T20:29:29.085981Z"
+  },
+  "f9bcf1f0-fbe5-4e3a-af88-7e0057f13dfd": {
+    "Id": "f9bcf1f0-fbe5-4e3a-af88-7e0057f13dfd",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BTC/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son mum verileri, fiyat\u0131n d\u00FC\u015F\u00FC\u015F e\u011Filimini yava\u015Flatarak daha y\u00FCksek bir kapan\u0131\u015F g\u00F6stermektedir. Ayr\u0131ca hacim art\u0131\u015F\u0131, al\u0131m f\u0131rsatlar\u0131n\u0131n g\u00FC\u00E7lendi\u011Fini g\u00F6steriyor.",
+    "Price": 78808.47,
+    "CreatedAt": "2026-05-03T20:24:21.0482824Z"
+  },
+  "2c69a100-5da4-4678-a9f3-720c9fbde955": {
+    "Id": "2c69a100-5da4-4678-a9f3-720c9fbde955",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BNB/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son saatlerde fiyat, d\u00FC\u015F\u00FCk seviyelerden toparlanma g\u00F6steriyor ve hacim art\u0131\u015F\u0131 g\u00F6zlemleniyor. Al\u0131m f\u0131rsat\u0131 uygun g\u00F6r\u00FCn\u00FCyor.",
+    "Price": 619.51,
+    "CreatedAt": "2026-05-03T19:38:14.1909613Z"
+  }
+}

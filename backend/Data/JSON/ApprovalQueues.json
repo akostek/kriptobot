@@ -1,0 +1,86 @@
+{
+  "08aa6466-dd44-416e-b8b4-eb4bf59b3a6b": {
+    "Id": "08aa6466-dd44-416e-b8b4-eb4bf59b3a6b",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatlik mumlar\u0131n genelinde y\u00FCkseli\u015F trendi g\u00F6zlemleniyor ve son kapan\u0131\u015F fiyat\u0131 2333.35 ile \u00F6nceki y\u00FCksek seviyelere yak\u0131n. Ayr\u0131ca hacimde bir art\u0131\u015F var.",
+    "Price": 2333.35,
+    "Amount": 0.042856836736880455,
+    "Status": "PENDING",
+    "CreatedAt": "2026-05-03T20:20:27.8890701Z",
+    "ProcessedAt": null
+  },
+  "e7ba5263-5ee2-4ab6-bdf7-b3c253b6ae44": {
+    "Id": "e7ba5263-5ee2-4ab6-bdf7-b3c253b6ae44",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son fiyatlar art\u0131\u015F g\u00F6stermekte ve y\u00FCkseli\u015F trendi izlemekte. Ayr\u0131ca, hacim art\u0131\u015F\u0131 da pozitif bir i\u015Faret.",
+    "Price": 2334.09,
+    "Amount": 0.04284324940340775,
+    "Status": "REJECTED",
+    "CreatedAt": "2026-05-03T19:38:43.7875217Z",
+    "ProcessedAt": "2026-05-03T19:42:01.5405118Z"
+  },
+  "d8942718-e6df-41fa-9c91-4bf1abde1f8a": {
+    "Id": "d8942718-e6df-41fa-9c91-4bf1abde1f8a",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BNB/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son saatlerde fiyat, d\u00FC\u015F\u00FCk seviyelerden toparlanma g\u00F6steriyor ve hacim art\u0131\u015F\u0131 g\u00F6zlemleniyor. Al\u0131m f\u0131rsat\u0131 uygun g\u00F6r\u00FCn\u00FCyor.",
+    "Price": 619.51,
+    "Amount": 0.16141789478781618,
+    "Status": "REJECTED",
+    "CreatedAt": "2026-05-03T19:38:14.1916494Z",
+    "ProcessedAt": "2026-05-03T20:00:02.4006129Z"
+  },
+  "3017f6e5-fa99-4ef5-b705-f80c23d5a791": {
+    "Id": "3017f6e5-fa99-4ef5-b705-f80c23d5a791",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BNB/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatlik verilerde, fiyat\u0131n en d\u00FC\u015F\u00FCk seviyelerden tekrar y\u00FCkselmeye ba\u015Flamas\u0131 ve hacim art\u0131\u015Flar\u0131n\u0131n g\u00F6zlemlenmesi al\u0131m f\u0131rsat\u0131 sunuyor.",
+    "Price": 619.28,
+    "Amount": 0.16147784523963313,
+    "Status": "PENDING",
+    "CreatedAt": "2026-05-03T20:00:33.0092484Z",
+    "ProcessedAt": null
+  },
+  "3beb422a-f814-4515-af8c-8bbb0956a67c": {
+    "Id": "3beb422a-f814-4515-af8c-8bbb0956a67c",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatte fiyat hareketleri, son kapan\u0131\u015F\u0131n \u00F6nceki y\u00FCksek seviyelerin \u00FCzerinde olmas\u0131 ve hacim art\u0131\u015Flar\u0131yla birlikte genel bir y\u00FCkseli\u015F trendi g\u00F6steriyor.",
+    "Price": 2336.47,
+    "Amount": 0.04279960795559113,
+    "Status": "REJECTED",
+    "CreatedAt": "2026-05-03T20:01:36.1634043Z",
+    "ProcessedAt": "2026-05-03T20:14:30.332259Z"
+  },
+  "d6b9f630-3bda-4a57-9b39-26f542ecd1eb": {
+    "Id": "d6b9f630-3bda-4a57-9b39-26f542ecd1eb",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "ETH/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son daha y\u00FCksek kapan\u0131\u015F fiyat\u0131 ve artan hacim, al\u0131m i\u00E7in uygun bir ortam sa\u011Fl\u0131yor.",
+    "Price": 2335.32,
+    "Amount": 0.04282068410324923,
+    "Status": "REJECTED",
+    "CreatedAt": "2026-05-03T19:45:12.9773563Z",
+    "ProcessedAt": "2026-05-03T19:59:48.2757049Z"
+  },
+  "6823aa98-e032-4909-a045-a257ac0e6465": {
+    "Id": "6823aa98-e032-4909-a045-a257ac0e6465",
+    "UserId": "c221d17b-b125-4fe4-8fa8-cb598b5fd3fc",
+    "Symbol": "BTC/USDT",
+    "Action": "BUY",
+    "Reasoning": "Son 24 saatte y\u00FCkseli\u015F trendi g\u00F6zlemleniyor. Fiyatlar \u00F6nceki dip seviyelerinden yukar\u0131 y\u00F6nl\u00FC hareket ediyor ve hacim art\u0131\u015F\u0131 mevcut.",
+    "Price": 78798.07,
+    "Amount": 0.0012690666154640587,
+    "Status": "PENDING",
+    "CreatedAt": "2026-05-03T19:37:11.2932487Z",
+    "ProcessedAt": null
+  }
+}
